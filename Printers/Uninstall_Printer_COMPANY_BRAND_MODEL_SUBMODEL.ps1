@@ -31,7 +31,7 @@ function Update-OutputOnExit
 try 
 {
     Remove-Printer -Name $PrinterName -ErrorAction SilentlyContinue
-    Remove-PrinterPort -Name "Intune Deployed - 192.168.1.151"
+    Remove-PrinterPort -Name $PrinterPortName -ErrorAction SilentlyContinue
 }
 catch 
 {
