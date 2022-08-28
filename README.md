@@ -1,7 +1,13 @@
 # Intune
 A list of Intune scripts to be used in the Microsoft Endpoint Manager.
 
-# Printers 
+# Printers
+
+## Why?
+At my workplace, we've found a need to deploy printers via Intune/MEM without using Azure Universal Print. The job count for Azure Universal Print is severly restrictive unless you pay a reasonable sum per month to be able to print. This should not be the case. This also becomes harder if you're not using Microsoft 365 Business Premium licenses as there's no print allocation provided. Maybe you want to use Intune, or maybe you want to include printer deployment into an onboarding process - you should have options!
+
+## More Info!
+
 Deployment, Detection & Removal of TCP/IP Printers. Driver INF, Catalog and INI files are added to a ZIP file under a folder called Driver.
 E.g.
 
