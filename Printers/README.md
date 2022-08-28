@@ -18,15 +18,19 @@ To achieve a 'free' Deployment, Detection & Removal of TCP/IP Printers, we need 
 
 Install Command:
 powershell.exe -ExecutionPolicy bypass -file Deploy_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
+
 Uninstall Command:
 powershell.exe -ExecutionPolicy bypass -file Uninstall_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
+
 Install Context:
 System
 
 Detection Script:
 Detect_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
+
 Run script as 32-bit process on 64-bit clients:
 No
+
 Enforce Script Signature Check and Run script silently:
 No
 
@@ -37,4 +41,5 @@ Unfortunately, you cannot deploy secure print/printer defaults to the printer, h
 
 ## Credits
 Thanks to Madhu Perera for 90% of the development of this - check him out here:
+
 https://github.com/madhuperera/
