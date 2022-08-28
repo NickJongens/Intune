@@ -11,27 +11,27 @@ To achieve a 'free' Deployment, Detection & Removal of TCP/IP Printers, we need 
 -  Port Information, e.g. TCP/IP Address
 -  Driver INF, Catalog and INI files packaged into a ZIP File
 
-1. Obtain the driver required and figure out its INF File name - you might need to manually install the driver to see this. (Print Management is your friend)
-2. Add the Driver folder to a Zip file with the format: Driver\MB5100P6.INF (Example)
-3. Update the variables across the Deployment, Detection and Uninstall scripts.
-4. Update Intune/MEM to deploy with the following options:
+1. ***Obtain the driver*** required and figure out its INF File name - you might need to manually install the driver to see this. (Print Management is your friend)
+2. ***Add the Driver folder to a Zip*** file with the format: Driver\MB5100P6.INF (Example)
+3. ***Update the variables*** across the Deployment, Detection and Uninstall scripts.
+4. ***Package & Update Intune/MEM*** to deploy with the following options:
 
-Install Command:
+***Install Command:***
 powershell.exe -ExecutionPolicy bypass -file Deploy_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
 
-Uninstall Command:
+***Uninstall Command:***
 powershell.exe -ExecutionPolicy bypass -file Uninstall_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
 
-Install Context:
+***Install Context:***
 System
 
-Detection Script:
+***Detection Script:***
 Detect_Printer_COMPANY_BRAND_MODEL_SUBMODEL.ps1
 
-Run script as 32-bit process on 64-bit clients:
+***Run script as 32-bit process on 64-bit clients:***
 No
 
-Enforce Script Signature Check and Run script silently:
+***Enforce Script Signature Check and Run script silently:***
 No
 
 ## What this does
@@ -40,6 +40,6 @@ Upon installation, the script unzips & installs the driver, creates a named prin
 Unfortunately, you cannot deploy secure print/printer defaults to the printer, however some driver vendors allow you to remove colour from the driver by repackaging e.g. Ricoh. Typically, this will require a managed print service.
 
 ## Credits
-Thanks to Madhu Perera for 90% of the development of this - check him out here:
+Thanks to ***Madhu Perera*** for 90% of the development of this - check him out here:
 
 https://github.com/madhuperera/
